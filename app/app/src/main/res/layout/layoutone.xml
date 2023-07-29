@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="137dp"
+            android:layout_height="93dp"
+            android:src="@drawable/crown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="255dp"
+            android:layout_height="51dp"
+            android:text="WORD"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#06CEF5"
+            android:textSize="45sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.171" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="268dp"
+            android:layout_height="55dp"
+            android:background="#F5F2F2"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Enter a Word (upto 16 letters)"
+            android:inputType="text"
+            android:textColor="#F4F0F0"
+            android:textColorHint="#0A0A0A"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.572"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.515" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="154dp"
+            android:layout_height="43dp"
+            android:background="#E3CC63"
+            android:elegantTextHeight="true"
+            android:lineSpacingExtra="24sp"
+            android:text="Word"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#1E1C1C"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.319"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.426" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="249dp"
+            android:layout_height="51dp"
+            android:background="#F8F7F7"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:hint="Enter clue"
+            android:inputType="text"
+            android:textColor="#060606"
+            android:textSize="20sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="143dp"
+            android:layout_height="48dp"
+            android:background="#E5D483"
+            android:text="Clue"
+            android:textAlignment="center"
+            android:textColor="#111111"
+            android:textSize="25sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.645" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="274dp"
+            android:layout_height="80dp"
+            android:fontFamily="sans-serif-black"
+            android:singleLine="false"
+            android:text="JUMBLE"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#03CCF4"
+            android:textIsSelectable="false"
+            android:textSize="60sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.291" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="192dp"
+            android:layout_height="73dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#103BAA"
+            android:drawableEnd="@drawable/baseline_play_arrow_24"
+            android:text="Start"
+            android:textAlignment="center"
+            android:textColor="#FBF9F9"
+            android:textSize="35sp"
+            android:translationX="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.935" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
